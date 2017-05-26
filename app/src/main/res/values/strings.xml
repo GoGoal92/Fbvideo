@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fb Movie</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="banner">ca-app-pub-2558089172112996/3057329268</string>
+    <string name="Interstitial">ca-app-pub-2558089172112996/9913907264</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="fbid">104971906760477</string>
+</resources>

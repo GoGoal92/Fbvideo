@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:text="USER INFO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="My ID"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/myid"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="1466847320498"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="Account"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/acctype"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="Free User"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/remaintimeclick"
+                android:clickable="true"
+                android:background="@drawable/primaryselector"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="Expire"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/remaintime"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="Show ads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:text="CATEGORIES"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <gogoal.com.utils.NestedListView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/nlv"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </gogoal.com.utils.NestedListView>
+
+
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:text="INFORMATION"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/download"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:background="@drawable/primaryselector"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_download_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/dd"
+                        android:textSize="14sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="Download Manager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rateus"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:background="@drawable/primaryselector"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_rateus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/rate"
+                        android:textSize="14sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="Rate Us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/aboutus"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:background="@drawable/primaryselector"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_aboutus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/about"
+                        android:textSize="14sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="About Us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
