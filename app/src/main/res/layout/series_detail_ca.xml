@@ -79,7 +79,7 @@
                         android:orientation="vertical"
                         >
 
-                        <gogoal.com.utils.HorizontalListView
+                        <gogoal.myfb.utils.HorizontalListView
                             android:id="@+id/hlv"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
@@ -129,10 +129,10 @@
                                     android:textSize="16sp" />
 
 
-                                <gogoal.com.utils.NestedListView
+                                <gogoal.myfb.utils.NestedListView
                                     android:id="@+id/nlv"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"></gogoal.com.utils.NestedListView>
+                                    android:layout_height="wrap_content"></gogoal.myfb.utils.NestedListView>
 
 
                             </LinearLayout>

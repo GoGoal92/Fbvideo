@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="gogoal.com">
+    package="gogoal">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".myfb.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,28 +23,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Moviedetail"
+        <activity android:name=".myfb.Moviedetail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <activity android:name=".Seriesdetail"
+        <activity android:name=".myfb.Seriesdetail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Categorychoice"/>
-        <activity android:name=".Series_ca_detail" android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Readmore"/>
-        <activity android:name=".Aboutus"/>
-        <activity android:name=".Mydownloadmanager"/>
-        <activity android:name=".webviewdownloader"/>
-        <activity android:name=".FakeDialog"/>
-
-        <service android:name=".utils.DownloadService"/>
+        <activity android:name=".myfb.Categorychoice"/>
+        <activity android:name=".myfb.Series_ca_detail" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".myfb.Readmore"/>
+        <activity android:name=".myfb.Aboutus"/>
+        <activity android:name=".myfb.Mydownloadmanager"/>
+        <activity android:name=".myfb.webviewdownloader"/>
+        <activity android:name=".myfb.FakeDialog"/>
 
 
+        <service android:name=".myfb.utils.DownloadService"/>
 
-        <service android:name=".utils.LocalService"/>
+
+
+        <service android:name=".myfb.utils.LocalService"/>
         <receiver
-            android:name=".receiver.BemobiDownloadReceiver"
+            android:name=".myfb.receiver.BemobiDownloadReceiver"
             android:exported="true">
             <intent-filter >
                 <action android:name="br.com.bemobi.medescope.ACTION_BROADCAST_FINISH_WITH_SUCCESS"/>
@@ -54,15 +55,9 @@
         </receiver>
 
 
+        <activity android:name=".myfb.Help"/>
 
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/fbid" />
-        <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
 
     </application>
 

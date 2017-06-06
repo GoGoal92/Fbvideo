@@ -7,7 +7,7 @@
    >
 
 
-    <gogoal.com.utils.HorizontalListView
+    <gogoal.myfb.utils.HorizontalListView
         android:id="@+id/hlv"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
