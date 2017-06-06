@@ -1,1 +1,1 @@
-include ':app', ':rippel', 'arrowdown', ':medescope'
+include ':app', ':rippel', 'arrowdown', ':medescope', ':easypermissions'

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Fbvideo.iml" filepath="$PROJECT_DIR$/Fbvideo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/arrowdown/arrowdown.iml" filepath="$PROJECT_DIR$/arrowdown/arrowdown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easypermissions/easypermissions.iml" filepath="$PROJECT_DIR$/easypermissions/easypermissions.iml" />
       <module fileurl="file://$PROJECT_DIR$/medescope/medescope.iml" filepath="$PROJECT_DIR$/medescope/medescope.iml" />
       <module fileurl="file://$PROJECT_DIR$/rippel/rippel.iml" filepath="$PROJECT_DIR$/rippel/rippel.iml" />
     </modules>

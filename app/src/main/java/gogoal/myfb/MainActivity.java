@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.annotation.NonNull;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -36,6 +37,7 @@ import gogoal.myfb.retorfit.Myclient;
 import gogoal.myfb.utils.Downloadlist;
 import gogoal.myfb.utils.MyTimer;
 import gogoal.myfb.utils.NestedListView;
+import pub.devrel.easypermissions.EasyPermissions;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,11 +56,31 @@ public class MainActivity extends AppCompatActivity {
         return ac;
     }
 
+    String[] per = new String[]{android.Manifest.permission.READ_PHONE_STATE, android.Manifest.permission.WRITE_EXTERNAL_STORAGE};
+
+    private void Requestpermission() {
+        if (EasyPermissions.hasPermissions(this, per)) {
+
+        } else {
+            EasyPermissions.requestPermissions(this, "All Permission Must Grant", 200, per);
+        }
+
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        EasyPermissions.onRequestPermissionsResult(requestCode, per, grantResults, this);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+        Requestpermission();
 
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
