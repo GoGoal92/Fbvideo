@@ -15,37 +15,40 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".myfb.MainActivity"
+            android:name=".com.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.APP_Fb"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
+
         </activity>
-        <activity android:name=".myfb.Moviedetail"
+        <activity android:name=".com.Moviedetail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <activity android:name=".myfb.Seriesdetail"
+        <activity android:name=".com.Seriesdetail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".myfb.Categorychoice"/>
-        <activity android:name=".myfb.Series_ca_detail" android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".myfb.Readmore"/>
-        <activity android:name=".myfb.Aboutus"/>
-        <activity android:name=".myfb.Mydownloadmanager"/>
-        <activity android:name=".myfb.webviewdownloader"/>
-        <activity android:name=".myfb.FakeDialog"/>
+        <activity android:name=".com.Categorychoice"/>
+        <activity android:name=".com.Series_ca_detail" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".com.Readmore"/>
+        <activity android:name=".com.Aboutus"/>
+        <activity android:name=".com.Mydownloadmanager"/>
+        <activity android:name=".com.webviewdownloader"/>
+        <activity android:name=".com.FakeDialog"/>
 
 
-        <service android:name=".myfb.utils.DownloadService"/>
+        <service android:name=".com.utils.DownloadService"/>
 
 
 
-        <service android:name=".myfb.utils.LocalService"/>
+        <service android:name=".com.utils.LocalService"/>
         <receiver
-            android:name=".myfb.receiver.BemobiDownloadReceiver"
+            android:name=".com.receiver.BemobiDownloadReceiver"
             android:exported="true">
             <intent-filter >
                 <action android:name="br.com.bemobi.medescope.ACTION_BROADCAST_FINISH_WITH_SUCCESS"/>
@@ -55,7 +58,7 @@
         </receiver>
 
 
-        <activity android:name=".myfb.Help"/>
+        <activity android:name=".com.Help"/>
 
 
 

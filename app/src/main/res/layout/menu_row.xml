@@ -147,7 +147,7 @@
                 android:textStyle="bold" />
 
 
-            <gogoal.myfb.utils.NestedListView
+            <gogoal.com.utils.NestedListView
                 android:id="@+id/nlv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp">
 
-            </gogoal.myfb.utils.NestedListView>
+            </gogoal.com.utils.NestedListView>
 
 
             <TextView
